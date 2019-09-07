@@ -2,20 +2,20 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-var z=122
-var a="AAA"
-var placeholder="Hello Type here"
-var fgt = "CLICK ME DUDE"
+let z=122
+let a="AAA"
+let placeholder="Hello Type here"
+let fgt = "CLICK ME DUDE"
 function App() {
   return (
-    <div>
-    <div id={z} className={a}><button>{fgt}</button><input placeholder={placeholder}></input></div>
-    <div>NEW</div>
-    <div>
-      <ul>
-      {aa()}
-      </ul>
-    </div>
+    <div className={a}>
+      <div id={z}><button>{fgt}</button><input placeholder={placeholder}></input></div>
+        <div>NEW</div>
+        <div>
+          <ul>
+          {aa()}
+          </ul>
+        </div>
     </div>
   );
 }
