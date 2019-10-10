@@ -1,22 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 let z=122
-let a="AAA"
+let p="AAA"
 let placeholder="Hello Type here"
 let fgt = "CLICK ME DUDE"
 class App extends React.Component{
+a=0;
+  state={
+    a:""
+  }
   handleInput=(e)=>{
     const value = e.target.value;
-    z=value;
-    this.setState({});
+    this.a=value;
+    this.setState({a:value , b: '12'});
   }
   render(){
     return (
-      <div className={a}>
+      <div className={p}>
         <div id={z}><button>{fgt}</button><input placeholder={placeholder}></input></div>
-        <div><input value = {z} onChange = {this.handleInput} /></div>
+        <div><input value = {this.state.a} onChange = {this.handleInput} /></div>
           <div>NEW</div>
           <div>
             <ul>
