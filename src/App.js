@@ -21,6 +21,12 @@ a=0;
     const value = e.target.value;
     this.setState({val:value});
   }
+  deleteTask=(e)=>{
+    const {todo} = this.state;
+    const index = e.target.id;
+    todo.splice(index,1);
+    this.setState({todo:todo});
+  }
   render(){
     const {val:a,todo} = this.state;
     return (
@@ -36,13 +42,16 @@ a=0;
               todo.map((item,i)=>
               {
                 return(
-                  <li key={i}>{item}</li>
+                  <div>
+                    <li key={i}>{item}</li>
+                    <button id = {i} onClick = {this.deleteTask}>Delete</button>
+                  </div>
                 )
               })
             }
             </ul>
           </div>
-          </div>
+        </div>
     );
   }
 }
