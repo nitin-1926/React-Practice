@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
+import Input from "./components/input"
 
 let z=122
 let p="AAA"
-let placeholder="Hello Type here"
+let placeholder="Fuck apple"
 let fgt = "CLICK ME DUDE"
 class App extends React.Component{
 a=0;
@@ -31,9 +32,10 @@ a=0;
     const {val:a,todo} = this.state;
     return (
       <div className={p}>
-        <div id={z}><button>{fgt}</button><input placeholder={placeholder}></input></div>
+        <div id={z}><button>{fgt}</button>
+        <Input placeholder={placeholder} /></div>
         <div>
-          <input value = {a} onChange = {this.handleInput} />
+          <Input value = {a} onChange = {this.handleInput} />
           <button onClick = {this.addList}>ADD</button>
         </div>
           <div>
