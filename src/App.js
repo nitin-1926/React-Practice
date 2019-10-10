@@ -8,15 +8,14 @@ let fgt = "CLICK ME DUDE"
 class App extends React.Component{
 a=0;
   state={
-    a:""
+    val:""
   }
   handleInput=(e)=>{
     const value = e.target.value;
-    this.a=value;
-    this.setState({a:value , b: '12'});
+    this.setState({val:value});
   }
   render(){
-    const {a} = this.state;
+    const {val:a} = this.state;
     return (
       <div className={p}>
         <div id={z}><button>{fgt}</button><input placeholder={placeholder}></input></div>
