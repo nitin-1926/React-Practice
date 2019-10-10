@@ -33,10 +33,10 @@ a=0;
           <div>
             <ul>
             {
-              todo.map((item)=>
+              todo.map((item,i)=>
               {
                 return(
-                  <li>{item}</li>
+                  <li key={i}>{item}</li>
                 )
               })
             }
