@@ -4,7 +4,6 @@ import Input from "./components/input"
 
 let z=122
 let p="AAA"
-let placeholder="Fuck apple"
 let fgt = "CLICK ME DUDE"
 class App extends React.Component{
 a=0;
@@ -33,7 +32,7 @@ a=0;
     return (
       <div className={p}>
         <div id={z}><button>{fgt}</button>
-        <Input placeholder={placeholder} /></div>
+        <Input placeholder="Write anything you want" /></div>
         <div>
           <Input value = {a} onChange = {this.handleInput} />
           <button onClick = {this.addList}>ADD</button>
