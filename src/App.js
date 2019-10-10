@@ -10,6 +10,7 @@ function App() {
   return (
     <div className={a}>
       <div id={z}><button>{fgt}</button><input placeholder={placeholder}></input></div>
+      <div><input value = "123" /></div>
         <div>NEW</div>
         <div>
           <ul>
