@@ -22,7 +22,7 @@ a=0;
     this.setState({val:value});
   }
   render(){
-    const {val:a} = this.state;
+    const {val:a,todo} = this.state;
     return (
       <div className={p}>
         <div id={z}><button>{fgt}</button><input placeholder={placeholder}></input></div>
@@ -30,22 +30,21 @@ a=0;
           <input value = {a} onChange = {this.handleInput} />
           <button onClick = {this.addList}>ADD</button>
         </div>
-          <div>NEW</div>
           <div>
             <ul>
-            {aa()}
+            {
+              todo.map((item)=>
+              {
+                return(
+                  <li>{item}</li>
+                )
+              })
+            }
             </ul>
           </div>
-      </div>
+          </div>
     );
   }
-}
-function aa(){
-  var arr=[];
-  for(var i =0; i<10  ;i++){
-    arr.push(<li> {i} </li>)
-  }
-  return arr;
 }
 
 export default App;
