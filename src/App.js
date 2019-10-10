@@ -15,7 +15,7 @@ a=0;
     const {val,todo} = this.state;
     todo.push(val);
     console.log(todo);
-    this.setState({todo:todo});
+    this.setState({todo:todo,val:" "});
   }
   handleInput=(e)=>{
     const value = e.target.value;
