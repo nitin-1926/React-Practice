@@ -16,10 +16,11 @@ a=0;
     this.setState({a:value , b: '12'});
   }
   render(){
+    const {a} = this.state;
     return (
       <div className={p}>
         <div id={z}><button>{fgt}</button><input placeholder={placeholder}></input></div>
-        <div><input value = {this.state.a} onChange = {this.handleInput} /></div>
+        <div><input value = {a} onChange = {this.handleInput} /></div>
           <div>NEW</div>
           <div>
             <ul>
