@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Input from "./components/input"
+import Input from "./components/input";
+import BUTTON from "./components/button";
 
 let z=122
 let p="AAA"
@@ -35,7 +36,7 @@ a=0;
         <Input placeholder="Write anything you want" /></div>
         <div>
           <Input value = {a} onChange = {this.handleInput} />
-          <button onClick = {this.addList}>ADD</button>
+          <BUTTON onClick = {this.addList} value = "ADD"></BUTTON>
         </div>
           <div>
             <ul>
@@ -45,7 +46,7 @@ a=0;
                 return(
                   <div key={i}>
                     <li>{item}</li>
-                    <button id = {i} onClick = {this.deleteTask}>Delete</button>
+                    <BUTTON id = {i} onClick = {this.deleteTask} value="Delete(X)"></BUTTON>
                   </div>
                 )
               })
