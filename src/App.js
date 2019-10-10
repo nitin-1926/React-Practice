@@ -7,19 +7,21 @@ let a="AAA"
 let b=0;
 let placeholder="Hello Type here"
 let fgt = "CLICK ME DUDE"
-function App() {
-  return (
-    <div className={a}>
-      <div id={z}><button>{fgt}</button><input placeholder={placeholder}></input></div>
-      <div><input value = {b} /></div>
-        <div>NEW</div>
-        <div>
-          <ul>
-          {aa()}
-          </ul>
-        </div>
-    </div>
-  );
+class App extends React.Component{
+  render(){
+    return (
+      <div className={a}>
+        <div id={z}><button>{fgt}</button><input placeholder={placeholder}></input></div>
+        <div><input value = {b} /></div>
+          <div>NEW</div>
+          <div>
+            <ul>
+            {aa()}
+            </ul>
+          </div>
+      </div>
+    );
+  }
 }
 function aa(){
   var arr=[];
