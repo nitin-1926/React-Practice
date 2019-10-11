@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 export default function(){
     return(
         <div>
-            <Link to = "/"> <button> HOME </button> </Link>
+            <Link to = "/home"> <button> HOME </button> </Link>
             <Link to = "/about"> <button> About </button> </Link>
             <Link to = "/todo"> <button> To-do </button> </Link>
         </div>
