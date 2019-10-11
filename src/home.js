@@ -4,7 +4,7 @@ import './App.css';
 export default function(){
     return(
         <div>
-            HOME
+            HOME AI yeh
         </div>
     )
 }

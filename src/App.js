@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './Nav.js';
 import Home from './home.js';
 import About from './about.js';
-import Todo from './todo';
+import Todo from './todo.js';
 import {Route} from 'react-router-dom';
 
 class App extends React.Component{
