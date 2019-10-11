@@ -36,7 +36,7 @@ a=0;
         <Input placeholder="Write anything you want" /></div>
         <div>
           <Input value = {a} onChange = {this.handleInput} />
-          <BUTTON onClick = {this.addList} value = "ADD"></BUTTON>
+          <BUTTON onClick = {this.addList} value = "ADD" />
         </div>
           <div>
             <ul>
@@ -46,7 +46,7 @@ a=0;
                 return(
                   <div key={i}>
                     <li>{item}</li>
-                    <BUTTON id = {i} onClick = {this.deleteTask} value="Delete(X)"></BUTTON>
+                    <BUTTON id = {i} onClick = {this.deleteTask} value="Delete(X)" />
                   </div>
                 )
               })
