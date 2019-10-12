@@ -12,6 +12,10 @@ a=0;
     val:"",
     todo:[]
   }
+  componentDidMount(){
+    console.log("Did Mount")
+    setTimeout(()=>{ this.props.history.push("/about") },3000)
+  }
   addList=(e)=>{
     const {val,todo} = this.state;
     todo.push(val);
@@ -30,6 +34,7 @@ a=0;
   }
   render(){
     const {val:a,todo} = this.state;
+    console.log(this.props);
     return (
       <div className={p}>
         <div>
